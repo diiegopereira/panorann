@@ -42,7 +42,7 @@ $.plax.enable();
 
 
 //Countdown (Edit this with your own date)
-$("#countdown").countdown("2015/09/22", function(event) {
+$("#countdown").countdown("2019/09/22", function(event) {
   var $this = $(this).html(event.strftime(''
      + '<div class="col-xs-3 countdown-col"><span class="countdown-time"> %-D </span> Days </div> '
      + '<div class="col-xs-3 countdown-col"><span class="countdown-time"> %H </span> Hours </div>'
