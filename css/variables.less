@@ -1,0 +1,56 @@
+//Media Queries
+@full-hd: ~"(min-width: 1600px)";
+@desktop:   ~"(min-width: 1200px)";
+@laptop:   ~"(min-width:992px)";
+@tablet:    ~"(min-width: 768px)";
+@mobile:    ~"(min-width: 240px)";
+
+//ThemeColors
+@color1: #0bc3a3;
+@color2: #154551;
+@colorgray: #888;
+@textcolor: #fff;
+@contrast-color: #fff;
+@textcolor-normal: #333;
+
+.color1 {
+  color: @color1;
+}
+
+
+
+//CSS3 Animations
+@anitime: .2s;
+@easing: ease-in-out;
+
+.anima1 {
+  -webkit-transition: all @anitime @easing;
+  -moz-transition: all @anitime @easing;
+  transition: all @anitime @easing;
+}
+
+.anima (@anima) {
+  -webkit-transition: all @anima ease-in-out;
+    -moz-transition: all @anima ease-in-out;
+    transition: all @anima ease-in-out;
+}
+
+.anima-transform {
+  -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+
+
+//Other Mixins
+@border-radius1: 10px;
+
+.border-radius(@border-radius){
+  -webkit-border-radius: @border-radius;
+  -moz-border-radius: @border-radius;
+  border-radius: @border-radius;
+}
+
+
